@@ -1,123 +1,103 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Font Awesome -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-
 </head>
 <body>
 
-<!-- ================= NAVBAR ================= -->
+    <!-- ================= NAVBAR ================= -->
 
-<header>
+    <header>
 
-<nav class="navbar">
+        <nav class="navbar">
 
-<div class="logo">
-<h1>My  Portfolio</h1>
-</div>
+            <div class="logo">
+                <h1>My Portfolio</h1>
+            </div>
 
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#resume">Resume</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+            <ul class="nav-links">
 
-<div class="menu-btn">
-<i class="fa-solid fa-bars"></i>
-</div>
+                <li><a href="#home">Home</a></li>
 
-</nav>
+               
 
-</header>
+                <li><a href="#skills">Skills</a></li>
 
-<!-- ================= HOME SECTION ================= -->
+                <li><a href="#projects">Projects</a></li>
 
-<section id="home" class="home">
+                <li><a href="#Education">Education</a></li>
 
-<div class="home-content">
+                <li><a href="#contact">Contact</a></li>
 
-<h1>Hello, I'm</h1>
+                <li>
+        <a href="https://github.com/nitish2334"target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </li>
 
-<h1>Nitish kumar sinha</h1>
 
-<h2>Java Full Stack Developer</h2>
-<br>
+            </ul>
 
-<p id="size">
-Passionate Java Full Stack Developer with knowledge of
+            <button class="menu-btn" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-HTML, CSS, JavaScript, Bootstrap, React, Java and MySQL.
-I enjoy creating responsive and modern web applications.
-</p>
-<br>
-<br>
+        </nav>
 
-<div class="buttons">
+    </header>
 
-<a href="#contact" class="btn">
-Hire Me
-</a>
+    <!-- ================= HOME ================= -->
 
-<a href="Resume .pdf" download class="btn2">
-Download CV
-</a>
+    <section id="home" class="home">
 
-</div>
+        <div class="home-content">
 
-</div>
+            <h1>Hello, I'm</h1>
 
-<div class="home-image">
+            <h2>Nitish kumar sinha  </h2>
 
-<img src="image.jpg" alt="Profile">
-
-</div>
-
-</section>
-<!-- ===== ABOUT SECTION ===== -->
-
-<section id="about" class="about">
-
-    <div class="about-container">
-
-        <div class="about-image">
-            <img src="about me.jpeg" alt="Profile">
-        </div>
-
-        <div class="about-content">
-
-            <h4>About Me</h4>
-
-            <h2>Java Full Stack Developer</h2>
+            <h3><b>Java Full Stack Developer</b></h3>
 
             <p>
-                Hello! I'm <strong>Raunak</strong>, a passionate Java Full Stack Developer.
-                I love creating responsive and modern websites using HTML, CSS,
-                JavaScript, Bootstrap, React, Java and MySQL.
+               <b> Passionate Java Full Stack Developer with knowledge of
+                HTML, CSS, JavaScript, Bootstrap, React, Java and MySQL.
+                I love building responsive and modern websites.</b>
             </p>
 
-            <a href="resume/resume.pdf" class="btn" download>
-                Download Resume
-            </a>
+            <div class="buttons">
+
+                <a href="#contact" class="btn">
+                    Hire Me
+                </a>
+
+                <a href="Resume .pdf"
+                   class="btn2"
+                   download>
+                    Download Resume
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
+        <div class="home-image">
 
-</section>
+            <img src="image.jpg" alt="Profile">
 
-<!-- ===== SKILLS SECTION ===== -->
+        </div>
 
+    </section>
+
+    <!-- ================= SKILLS SECTION ================= -->
 
 <section id="skills" class="skills">
 
@@ -139,14 +119,11 @@ Download CV
             <i class="fa-brands fa-js"></i>
             <h3>JavaScript</h3>
         </div>
-        
 
-        
         <div class="skill-box">
             <i class="fa-brands fa-bootstrap"></i>
             <h3>Bootstrap</h3>
-        </div> <
-        
+        </div>
 
         <div class="skill-box">
             <i class="fa-brands fa-react"></i>
@@ -173,7 +150,226 @@ Download CV
 </section>
 
 
-<script src="script.js"></script>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="projects">
+
+    <h2 class="heading">My Projects</h2>
+
+    <div class="projects-container">
+
+        <!-- Project 1 -->
+        <div class="project-box">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Craving Clone – Food Delivery Web Application</h3>
+
+            <p>
+                Built a responsive food delivery web application with
+                restaurant listings, menu browsing and dynamic cart management.
+            </p>
+
+            <a href="#" class="project-btn">Live Demo</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-box">
+            <i class="fa-solid fa-cloud-sun"></i>
+
+            <h3>Weather Application</h3>
+
+            <p>
+                Developed a weather app using OpenWeather API
+                to display temperature, humidity and weather conditions.
+            </p>
+
+            <a href="#" class="project-btn">Live Demo</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-box">
+
+            <i class="fa-solid fa-list-check"></i>
+
+            <h3>Task Management App</h3>
+
+            <p>
+                Created a To-Do List application for
+                task creation, tracking and status updates.
+            </p>
+
+            <a href="#" class="project-btn">Live Demo</a>
+
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-box">
+
+            <i class="fa-solid fa-money-bill-transfer"></i>
+
+            <h3>Currency Converter</h3>
+
+            <p>
+                Multi-currency converter using
+                live exchange rates API.
+            </p>
+
+            <a href="#" class="project-btn">Live Demo</a>
+
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-box">
+
+            <i class="fa-solid fa-calculator"></i>
+
+            <h3>Salary & Age Calculator</h3>
+
+            <p>
+                Utility calculator with
+                input validation using JavaScript.
+            </p>
+
+            <a href="#" class="project-btn">Live Demo</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education" class="education">
+
+    <h2 class="heading">Education</h2>
+
+    <div class="education-container">
+
+        <!-- Graduation -->
+
+        <div class="education-box">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <h3>B.Tech in Computer Science & Engineering (Core)</h3>
+
+            <h4>IES University, Bhopal</h4>
+
+            <p><strong>Current:</strong> 7th Semester</p>
+
+            <p><strong>CGPA:</strong> 7.24</p>
+
+        </div>
+
+        <!-- Class 12 -->
+
+        <div class="education-box">
+
+            <i class="fa-solid fa-school"></i>
+
+            <h3>Class XII</h3>
+
+            <h4>Bihar Board (Hindi Medium)</h4>
+
+            <p><strong>Passing Year:</strong> 2023</p>
+
+            <p><strong>Percentage:</strong> 59%</p>
+
+        </div>
+
+        <!-- Class 10 -->
+
+        <div class="education-box">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <h3>Class X</h3>
+
+            <h4>Bihar Board (Hindi Medium)</h4>
+
+            <p><strong>Passing Year:</strong> 2021</p>
+
+            <p><strong>Percentage:</strong> 61%</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+    <h2 class="heading">Contact Me</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Get In Touch</h3>
+
+            <p>
+                Feel free to contact me for internships,
+                projects, or job opportunities.
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                youremail@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 9876543210
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Bhopal, Madhya Pradesh
+            </p>
+
+        </div>
+
+        <form id="contact-form">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                rows="6"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
