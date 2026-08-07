@@ -1,0 +1,39 @@
+    <!doctype html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="style.css">
+        
+    
+    </head>
+
+    <body>
+        <header class="main  ">
+            <h1>To Do List</h1>
+        </header>
+
+        <main >
+            <div class="main2">
+                <input  type="text" name="newTask" id="newTask" placeholder="Add A New Task" class="main3 " />
+                <button class="main4"
+                    onclick="addNewTask()">
+                    <i class="bi bi-plus-circle"></i><b> Add New Task</b>
+                </button>
+            </div>
+
+            <div class="main5 " id="taskDiv">
+                <ol id="taskList">
+            
+                </ol>
+            </div>
+        </main>
+
+        
+        <script src="script.js"></script>
+    </body>
+
+    </html>
